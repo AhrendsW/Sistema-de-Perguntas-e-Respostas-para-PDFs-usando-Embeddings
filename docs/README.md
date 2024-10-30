@@ -4,7 +4,7 @@ Este projeto é um sistema de perguntas e respostas desenvolvido em Python que p
 
 ## Funcionalidades
 
-- **Extração de texto de PDFs**: Suporte para PDFs com conteúdo digital e implementação de tratamento especial para páginas não textuais.
+- **Extração de texto de PDFs**: Suporte para PDFs com conteúdo digital. PDFs que contenham apenas imagens (como escaneamentos) precisam de OCR adicional, o qual pode ser integrado com `pytesseract` e Tesseract OCR.
 - **Processamento de embeddings**: Utiliza o modelo `text-embedding-ada-002` da OpenAI para transformar o conteúdo do PDF em embeddings, possibilitando consultas eficazes.
 - **Consultas baseadas em similaridade de cosseno**: Responde perguntas usando embeddings, comparando a similaridade entre a pergunta e o conteúdo do PDF.
 - **Interface de usuário CLI**: Permite que o usuário faça perguntas diretamente pela linha de comando.
