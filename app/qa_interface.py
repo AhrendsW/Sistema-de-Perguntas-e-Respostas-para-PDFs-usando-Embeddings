@@ -20,7 +20,7 @@ def generate_dynamic_response(question, context):
         return f"Erro ao gerar resposta dinâmica: {str(e)}"
 
 # Função principal de resposta a perguntas
-def answer_question(question, all_embeddings, all_texts, similarity_threshold=0.7):
+def answer_question(question, all_embeddings, all_texts, similarity_threshold=0.8):
     if len(question.split()) < 3:
         return "Por favor, faça uma pergunta mais específica."
 
