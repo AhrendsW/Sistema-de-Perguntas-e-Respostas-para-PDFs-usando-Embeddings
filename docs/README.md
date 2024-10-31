@@ -11,7 +11,19 @@ Este projeto é um sistema de perguntas e respostas desenvolvido em Python que p
 
 ## Requisitos
 
-Certifique-se de que o Python 3.11.9 esteja instalado e que você tenha configurado um ambiente virtual (recomendado) antes de instalar as dependências do projeto.
+Certifique-se de que o Python 3.11.9 esteja instalado.
+
+Crie e ative o seu ambiente virtual através do seguinte comando:
+ - No Windows:
+ ```bash
+ python -m venv .venv
+ .venv\Scripts\activate
+```
+- No macOS ou Linux:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
 
 ## Dependências
 
