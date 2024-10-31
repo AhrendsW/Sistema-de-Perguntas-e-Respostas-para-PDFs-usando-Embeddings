@@ -12,8 +12,8 @@ def generate_dynamic_response(question, context):
                 {"role": "system", "content": "Você é uma IA que responde perguntas com base exclusivamente no conteúdo fornecido do PDF. Não inclua informações externas ao conteúdo fornecido."},
                 {"role": "user", "content": f"{question}\n\nContexto:\n{context}"}
             ],
-            max_tokens=300,  # Limita a resposta a 300 tokens
-            temperature=0.3   # Define o nível de criatividade como baixo
+            max_tokens=500,  # Limita a resposta a 300 tokens
+            temperature=0.4   # Define o nível de criatividade como baixo
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
